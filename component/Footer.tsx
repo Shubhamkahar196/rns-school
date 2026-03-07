@@ -8,12 +8,13 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Admission", href: "/admission" },
-    { name: "Gallery", href: "/gallery" },
+    // { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" }
   ];
 
   return (
-    <footer className="bg-[#020617] text-white mt-20 border-t border-white/5">
+    // bg-[#020617]
+    <footer className=" bg-blue-900 text-white mt-50 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-24">
@@ -59,7 +60,7 @@ export default function Footer() {
               <div className="group">
                 <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Phone</p>
                 <p className="text-slate-200 text-sm font-medium transition-colors group-hover:text-blue-400">
-                  +91 99999 99999
+                  +91 7275561226
                 </p>
               </div>
 

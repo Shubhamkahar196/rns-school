@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Admissions", href: "/admission" },
-    { name: "Gallery", href: "/gallery" },
+    // { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden md:flex gap-3">
             <a
-              href="tel:+918853716250"
+              href="tel:+917275561226"
               className="flex items-center gap-2 bg-white/10 hover:bg-yellow-400 hover:text-black border border-yellow-400/50 px-5 py-2 rounded-full transition-all active:scale-95"
             >
               <Phone size={18} />
@@ -67,7 +67,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://wa.me/8853716250"
+              href="https://wa.me/7275561226"
               className="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-2 rounded-full shadow-lg shadow-green-900/20 transition-all active:scale-95"
             >
               <MessageCircle size={18} />
@@ -119,7 +119,7 @@ export default function Navbar() {
             <hr className="border-white/10 my-2" />
 
             <a
-              href="tel:+918853716250"
+              href="tel:+917275561226"
               className="flex items-center justify-center gap-3 bg-yellow-400 text-black px-4 py-3 rounded-xl font-bold"
             >
               <Phone size={20} />
@@ -127,7 +127,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://wa.me/8853716250"
+              href="https://wa.me/7275561226"
               className="flex items-center justify-center gap-3 bg-green-500 text-white px-4 py-3 rounded-xl font-bold"
             >
               <MessageCircle size={20} />

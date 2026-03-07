@@ -37,9 +37,9 @@ export default function About() {
             
             <div className="relative z-10">
               {/* Next.js Image Component */}
-              <div className="relative w-full h-[550px] overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white">
+              <div className="relative w-full h-135.5 overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white">
                 <Image
-                  src="/images/about-school.jpg" // Ensure this exists in your public/images folder
+                  src="/School.jpg" 
                   alt="Students at RNS Public School"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
@@ -52,9 +52,9 @@ export default function About() {
               <motion.div 
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                className="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 md:p-8 rounded-[2rem] shadow-2xl z-20 border-4 border-white"
+                className="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 md:p-8 rounded-4xl shadow-2xl z-20 border-4 border-white"
               >
-                <p className="text-4xl md:text-5xl font-extrabold text-yellow-400">18+</p>
+                <p className="text-4xl md:text-5xl font-extrabold text-yellow-400">10+</p>
                 <p className="text-xs md:text-sm font-semibold uppercase tracking-wider opacity-90">
                   Years of Academic<br/>Excellence
                 </p>
@@ -85,7 +85,7 @@ export default function About() {
                   "State-of-the-art sports and creative facilities"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 font-semibold text-slate-800">
-                    <CheckCircle2 className="text-blue-600 mt-1 flex-shrink-0" size={22} />
+                    <CheckCircle2 className="text-blue-600 mt-1 shrink-0" size={22} />
                     {item}
                   </li>
                 ))}

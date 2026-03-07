@@ -7,8 +7,8 @@ export default function Contact() {
     {
       icon: <Phone className="text-blue-600" size={24} />,
       label: "Call Us",
-      value: "+91 99999 99999",
-      href: "tel:+919999999999",
+      value: "+91 7275561226",
+      href: "tel:+917275561226",
     },
     {
       icon: <Mail className="text-blue-600" size={24} />,
@@ -19,8 +19,8 @@ export default function Contact() {
     {
       icon: <MapPin className="text-blue-600" size={24} />,
       label: "Our Location",
-      value: "Main Branch, RNS Road, India",
-      href: "https://maps.google.com",
+      value: "9MQ2+64R, Chauri-Sureri Rd, Chauri Bazar, Kochari, Uttar Pradesh 221402",
+      href: "https://www.google.com/maps/dir//RNS+Public+School,+9MQ2%2B64R,+Chauri-Sureri+Rd,+Chauri+Bazar,+Kochari,+Uttar+Pradesh+221402/@28.8038603,77.5504773,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x398fd9b999526d91:0xcecbb6cc07956e9f!2m2!1d82.6502637!2d25.3881136?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D",
     },
     {
       icon: <Clock className="text-blue-600" size={24} />,
