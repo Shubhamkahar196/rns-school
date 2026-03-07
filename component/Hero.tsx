@@ -28,7 +28,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 px-4 py-2 rounded-full mb-6"
           >
             <ShieldCheck size={18} />
-            <span className="text-sm font-semibold tracking-wide uppercase">CBSE Affiliated • Est. 2005</span>
+            <span className="text-sm font-semibold tracking-wide uppercase">CBSE Affiliated • Est. 2016</span>
           </motion.div>
 
           {/* Main Heading */}
