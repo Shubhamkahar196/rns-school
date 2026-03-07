@@ -74,7 +74,7 @@ export default function Footer() {
               <div className="group">
                 <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Address</p>
                 <p className="text-slate-200 text-sm font-medium leading-relaxed">
-                  RNS Public School, India
+                  9MQ2+64R, Chauri-Sureri Rd, Chauri Bazar, Kochari, Uttar Pradesh 221402
                 </p>
               </div>
             </div>
