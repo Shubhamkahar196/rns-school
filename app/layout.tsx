@@ -4,7 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
-import { GraduationCap } from "lucide-react";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
