@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
+import { GraduationCap } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +18,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "RNS Public School | Best CBSE School",
-  description: "RNS Public School is a CBSE affiliated school providing quality education with modern facilities and experienced teachers."
-,
+  description:
+    "RNS Public School is a CBSE affiliated school providing quality education with modern facilities and experienced teachers.",
+    icons:{
+      icon: "/Graduation-cap.png",
+    }
+    
 };
 
 export default function RootLayout({
@@ -31,16 +36,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Toaster position="top-right"
-        toastOptions={{
-          style:{
-              background:"#1e3a8a",
-              color:"#fff"
-            }
-        }}/>
-        <Footer/>
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              background: "#1e3a8a",
+              color: "#fff",
+            },
+          }}
+        />
+        <Footer />
       </body>
     </html>
   );
