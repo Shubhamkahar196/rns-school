@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "RNS Public School is a CBSE affiliated school providing quality education with modern facilities and experienced teachers.",
     icons:{
-      icon: "/Graduation-cap.png",
+      icon: "/icon.png",
     }
     
 };
