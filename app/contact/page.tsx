@@ -65,7 +65,7 @@ export default function Contact() {
                 transition={{ delay: index * 0.1 }}
                 className="group flex items-start gap-5 p-6 bg-white border border-slate-100 rounded-4xl hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300"
               >
-                <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-800 group-hover:text-white transition-all shadow-sm">
                   {item.icon}
                 </div>
                 <div>

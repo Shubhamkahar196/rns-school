@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import axios from "axios";
 import toast from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -19,7 +18,7 @@ export default function Admission() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -31,26 +30,27 @@ export default function Admission() {
       string
     >;
 
-    try {
-      const response = await axios.post("/api/admission", payload);
+    const message = `
+New Admission Inquiry
 
-      if (response.status === 200) {
-        toast.success("Inquiry Sent Successfully!");
-        setSubmitted(true);
-        form.reset();
-      }
-    } catch (error: unknown) {
-      let errorMsg = "Something went wrong";
+Student Name: ${payload.name}
+Phone: ${payload.phone}
+Class: ${payload.class}
+Message: ${payload.message || "N/A"}
+`;
 
-      if (axios.isAxiosError(error)) {
-        errorMsg = error.response?.data?.message ?? errorMsg;
-      }
+    const whatsappUrl = `https://wa.me/917275561226?text=${encodeURIComponent(
+      message
+    )}`;
 
-      toast.error(errorMsg);
-      console.error("Axios Error:", error);
-    } finally {
+    toast.success("Redirecting to WhatsApp...");
+
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+      setSubmitted(true);
+      form.reset();
       setLoading(false);
-    }
+    }, 800);
   };
 
   return (
